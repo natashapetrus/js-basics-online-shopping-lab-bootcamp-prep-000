@@ -26,6 +26,10 @@ function viewCart() {
     for (let i=0; i<cart.length-1; i++){
       newString = newString + Object.keys(cart[i])[0] + ' at $' + cart[i][Object.keys(cart[i])[0]] + ', ';
     }
+    if (!(cart.length==1)){
+      newString = newString + 'and ';
+    }
+    newString = newString + Object.keys(cart[cart.length-1])[0] + ' at $' + cart[cart.length-1][Object.keys(cart[cart.length-1])[0]] + '.';
     console.log(newString);
   }
 }
