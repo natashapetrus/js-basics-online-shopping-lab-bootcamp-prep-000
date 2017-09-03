@@ -42,6 +42,8 @@ function total() {
   var totalPrice = 0;
   for (let i=0; i<cart.length; i++){
     totalPrice += cart[i][Object.keys(cart[i])[0]];
+    // Object.keys(x[i])[0]       --> to access object property
+    // x[i][Object.keys(x[i])[0]] --> to access the value
   }
   return totalPrice;
 }
@@ -51,7 +53,7 @@ function removeFromCart(item) {
   for (let i=1; i<cart.length; i++){
     if ((Object.keys(cart[i])[0])==item){
       bool = true;
-      cart.splice(i,1);
+      cart.splice(i,1); // use this to COMPLETELY remove object from array (*delete is only for objects, not arrays)
     }
   }
   if (bool == false){
