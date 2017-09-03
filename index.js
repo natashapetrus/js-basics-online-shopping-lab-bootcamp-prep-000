@@ -26,7 +26,7 @@ function viewCart() {
     for (let i=0; i<cart.length-1; i++){
       newString = newString + Object.keys(cart[i])[0] + ' at $' + cart[i][Object.keys(cart[i])[0]];
     }
-    console.log('In your cart, you have ');
+    console.log(newString);
   }
 }
 
