@@ -24,7 +24,7 @@ function viewCart() {
   else{
     var newString = 'In your cart, you have ';
     for (let i=0; i<cart.length-1; i++){
-      newString = newString + Object.keys(cart[i])[0] + ' at $' + cart[i][Object.keys(cart[i])[0]];
+      newString = newString + Object.keys(cart[i])[0] + ' at $' + cart[i][Object.keys(cart[i])[0]] + ', ';
     }
     console.log(newString);
   }
