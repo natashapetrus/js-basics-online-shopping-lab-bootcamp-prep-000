@@ -47,7 +47,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  let bool = false;
+  for (let i=1; i<cart.length; i++){
+    if ((Object.keys(cart[i])[0])==item){
+      bool = true;
+      delete cart[Object.keys(cart[i])[0]];
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
