@@ -66,7 +66,6 @@ function placeOrder(cardNumber) {
   if (cardNumber == null){
     console.log('Sorry, we don\'t have a credit card on file for you.');
   }
-  }
   else{
     let newPrice = total();
     let newString = 'Your total cost is $' + newPrice + ', which will be charged to the card ' + cardNumber + '.';
