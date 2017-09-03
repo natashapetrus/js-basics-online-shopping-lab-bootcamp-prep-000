@@ -51,7 +51,7 @@ function removeFromCart(item) {
   for (let i=1; i<cart.length; i++){
     if ((Object.keys(cart[i])[0])==item){
       bool = true;
-      delete cart[Object.keys(cart[i])[0]];
+      delete cart[i][Object.keys(cart[i])[0]];
     }
   }
   if (bool == false){
