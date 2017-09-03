@@ -24,7 +24,7 @@ function viewCart() {
   else{
     var newString = 'In your cart, you have ';
     for (let i=0; i<cart.length-1; i++){
-      newString = newString + Object.keys(cart[i])[i] + ' at $' + cart[i][Object.keys(cart[i])[i]];
+      newString = newString + Object.keys(cart[i])[0] + ' at $' + cart[i][Object.keys(cart[i])[0]];
     }
     console.log('In your cart, you have ');
   }
@@ -33,7 +33,7 @@ function viewCart() {
 function total() {
   var totalPrice = 0;
   for (let i=0; i<cart.length; i++){
-    totalPrice += cart[i][Object.keys(cart[i])[i]];
+    totalPrice += cart[i][Object.keys(x[i])[0]];
   }
   return totalPrice;
 }
