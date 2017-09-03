@@ -54,6 +54,10 @@ function removeFromCart(item) {
       delete cart[Object.keys(cart[i])[0]];
     }
   }
+  if (bool == false){
+    console.log('That item is not in your cart.');
+  }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
