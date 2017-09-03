@@ -69,6 +69,7 @@ function placeOrder(cardNumber) {
   else{
     let newPrice = total();
     let newString = 'Your total cost is $' + newPrice + ', which will be charged to the card ' + cardNumber + '.';
+    cart = []; // empty the array
     console.log(newString);
   }
 }
